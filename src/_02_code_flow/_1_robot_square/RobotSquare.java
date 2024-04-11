@@ -53,7 +53,8 @@ robtop.turn(90);
     	 *            TURN
     	 *            INCREASE COUNT
     	 *      }
-    	 **/ while ( count < 4) {
+    	 **/ 
+    	while ( count < 4) {
             robtop.move(100);
             robtop.turn(90);
             count += 1;

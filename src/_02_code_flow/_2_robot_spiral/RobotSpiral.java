@@ -36,7 +36,12 @@ public class RobotSpiral {
 			// COUNT.   Increase the count of how many lines have been drawn so far ( count+=1 )
 
 			// Change the robot pen width to the current value of the count variable 
-
+while (count<50)
+		{robtop.setRandomPenColor();
+robtop.move(5*count);
+robtop.turn(360/7);
+count +=1 ;
+robtop.setPenWidth(count);}
 
 		//  End the while loop here
 
