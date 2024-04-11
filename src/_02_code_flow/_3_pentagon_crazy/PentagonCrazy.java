@@ -21,7 +21,7 @@ robtop.setSpeed(100);
 robtop.setPenColor(130,0, 0);
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape will have.
 		//  				(Hint: its called PentagonCrazy)
-int sides = 11;
+int sides = 5;
 		//  TURN ANGLE. Make another int variable for the angle the robot must turn. 
 		//  			Hint: Divide 360 by the number of sides the shape has to get the angle.
 		int acute = 360/sides;
