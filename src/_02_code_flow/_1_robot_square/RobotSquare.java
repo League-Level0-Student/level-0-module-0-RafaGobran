@@ -27,17 +27,18 @@ public class RobotSquare {
     	int count = 0;
 
         // DRAW.  Draw a line. Use this command:
-    		  /**     rob.move(<distance>);
-    		   robtop.move(<distance>);
-    		   */
+    		  //   rob.move(<distance>);
+    		   robtop.move(100);
+    
   
 
 	// TURN.  Turn 90 degrees. Use this command:
-    		  /**     rob.turn(<angle>);    
-robtop.turn(<angle>);
+    		  ///     rob.turn(/angle/);    
+robtop.turn(90);
     	
     	// INCREASE COUNT. Add one to the number of sides that have now been drawn like this:
     		  /**     count += 1;    **/
+    	count += 1;
 
     	
     	// Run the program. Did the Robot draw a line and turn?
@@ -52,7 +53,11 @@ robtop.turn(<angle>);
     	 *            TURN
     	 *            INCREASE COUNT
     	 *      }
-    	 **/
+    	 **/ while ( count < 4) {
+            robtop.move(100);
+            robtop.turn(90);
+            count += 1;
+    	 }
     	
     	
     	// Run the program again. Did your Robot draw a square?
