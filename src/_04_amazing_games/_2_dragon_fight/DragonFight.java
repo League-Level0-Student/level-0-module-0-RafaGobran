@@ -5,7 +5,29 @@ import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 
 public class DragonFight {
-
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3//sign out of github next time or I will hack you :3//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
+	//sign out of github next time or I will hack you :3
 	public static void main(String[] args) {
 
 		Random ran = new Random();    //This will be used later to make random numbers. 
