@@ -1,4 +1,5 @@
 // 1. Drag and drop an image of a cat onto this sketch
+
 //    a. First find an image of a cat with BIG eyes(use google to search)
 //    b. Right click on the image and select 'Save image As'
 //    c. Rename the image something short (e.g. cat.jpg)
@@ -9,22 +10,22 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
+int x=342;
+int y=340;
 
 void setup() {
   
 // 2. The code below loads your cat picture into the program. 
 //     Make sure the file name is correct for the cat image you saved earlier
-cat = loadImage("cat.jpg");
-  
+
+  cat = loadImage("bigEyeCat.jpeg");
 // 3. Set the size of the sketch. Make it big enough to show the cat you chose.
-
+size(700, 700);
 // 4. Resize the cat so it is the same size as the sketch
-
+cat.resize(700, 700);
 // 5. DRAW CAT.    Use the background() command to make the cat the background of the sketch
 //    Run the program to see if the cat is drawn. Get this working before you go on.
- 
+ background(cat);
 
   }
 
@@ -33,7 +34,7 @@ void draw() {
 // 6. WHERE IS THE EYE? This code prints the x and y locations of the mouse when you click.
 //    You can use this to find the x and y for the center of the cat's eyes.
       if(mousePressed){
-          println("Mouse’s x-position: " + mouseX + "\n" + "Mouse’s y-position: " + mouseY + "\n");
+          println("Mouse’s x-position: " + mouseX  + "Mouse’s y-position: " + mouseY);
       }
 
 // 7. Run the program and click on one of the cat's eyes. 
@@ -43,29 +44,39 @@ void draw() {
 
 // 8. DRAW CIRCLES.
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
-
+ellipse(x, y,  50, 50 ); noStroke();
+ellipse(x-106, y+19, 50, 50 ); noStroke();
 // 9.  COLOR.  Set the color of your ellipse to the laser color you would like
 //    Remember to use the   fill()  command to set colors.
-
+fill(#DB1417);
 
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y, width, height);
+                
 // Run the program to make sure it is in the right place and is the right size.
+
+
+if (y > 700){
+  x=342; 
+  y=340; 
+  background(cat);
+}
+
+
+
 }
 
 // 11.  LASER BEAM.  This code will make your ellipse move down and to the right when you press 
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
 void keyPressed() {
-    x+=1;
-    y+=1;
+    x+=10;                 
+    y+=10;
     
 // 12.  If you want them to go faster, add more than one each time the key is pressed    
 }
- 
-
+      
 //13.   Now make the cat shoot lasers from the other eye.
 //      You will need to click the mouse on the other eye to figure our where to draw the other circle
 //      Use offsets from the other eye so that you don’t need to make a second set of coordinates.
@@ -75,3 +86,4 @@ void keyPressed() {
 //     You will need  an if statement to check when x > width 
 //     Then set x and y back to their original values and re-draw the cat
 //     background(cat);
+  
